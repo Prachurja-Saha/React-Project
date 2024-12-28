@@ -1,3 +1,8 @@
+
+// Adjust the path to App.css based on your folder structure
+import '../App.css'
+
+
 // React is JS library
 
 // This is function component. We used .tsx for component
@@ -8,7 +13,7 @@ function Message(){
 
     // Jsx code (JavaScript XML code)
     return  <div>
-                <h1>Message Component</h1>
+                <h1 className="container">Message Component</h1>
                 <p> Hello {name}, Welcome!!</p>
             </div>
 }

@@ -1,4 +1,4 @@
-import { Fragment } from "react/jsx-runtime";
+import { Fragment } from "react/jsx-runtime"; // Fragments is empty tag
 import { MouseEvent } from "react";
 
 let ListGroup = () => {
