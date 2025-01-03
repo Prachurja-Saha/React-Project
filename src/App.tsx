@@ -1,14 +1,19 @@
-import ButtonTest from "./components/Button";
-import FormHandler from "./components/FormHandling";
-import ListGroup from "./components/ListGroup"
-import Message from "./components/Message"
+import AxiosTest from "./components/AxiosTopic/Axios";
+import ButtonTest from "./components/Basic/Button";
+import FormHandler from "./components/Basic/FormHandling";
+import ListGroup from "./components/Basic/ListGroup"
+import Message from "./components/Basic/Message"
 import AlertButton from "./components/practice/AlertButton";
 import BlockTest from "./components/practice/block";
 import Calculator from "./components/practice/usestate&props/Calculator";
 import ColourInput from "./components/practice/usestate&props/ColourInput";
 import Colour from "./components/practice/usestate&props/ColourInput";
-import PropTest from "./components/Props";
-import NewList from "./components/UseState"
+import PropTest from "./components/Basic/Props";
+import NewList from "./components/Basic/UseState"
+import { Route } from "react-router-dom";
+import { Routes } from "react-router-dom";
+import Home from "./components/ReactRouterDom/Home";
+import About from "./components/ReactRouterDom/About";
 
 const users = [ 
    { id: 1, name: "Alice", jobTitle: "Engineer", profilePicture: "https://via.placeholder.com/150/0000FF/808080?Text=User1" }, 
@@ -66,6 +71,18 @@ function App() {
 
     <br/>
     <BlockTest userList = {users} />
+
+    <br/>
+    <AxiosTest/>
+
+   {/*  used for chaning one page to other */}
+    <Routes>  
+      <Route path="/Home" element={<Home></Home>}></Route>
+      <Route path="/About" element={<About></About>}></Route>
+    </Routes>
+
+    {/*  There is Link tag is there by which we can direct one route to another by 
+    providing link --> for better performance to achive single page application */}
 
   </div>
 }

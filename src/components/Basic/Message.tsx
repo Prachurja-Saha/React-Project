@@ -1,6 +1,6 @@
 
 // Adjust the path to App.css based on your folder structure
-import '../App.css'
+import '../../App.css'
 
 
 // React is JS library
